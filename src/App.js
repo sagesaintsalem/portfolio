@@ -1,9 +1,20 @@
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import NavBar from "./components/NavBar";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Home from "./components/Home";
 
 function App() {
   return (
     <div className="App">
-      <h1>DEEZ NUTZ</h1>
+      <Router>
+        <NavBar />
+          <Routes>
+            <Route path="/portfolio" element={< Home />}></Route>
+            <Route path="/about" element={<About />}></Route>
+            <Route path="/projects" element={<Projects />}></Route>
+          </Routes>
+      </Router>
     </div>
   );
 }
