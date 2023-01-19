@@ -19,12 +19,7 @@ const NavBar = () => {
         </Container>
       </Navbar>
       <div>
-        <h1>
-          Example heading{' '}
-          <Badge bg="dark" as="Button">
-            New
-          </Badge>
-        </h1>
+
       </div>
     </>
   );
