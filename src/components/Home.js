@@ -3,7 +3,10 @@
 
 const Home = () => {
     return (
-        <h1>Something here</h1>
+        <div>
+            <h1>Welcome!</h1>
+            <p>My name is Rita Toussaint and this is my portfolio site!</p>
+        </div>
     )
 
 }
