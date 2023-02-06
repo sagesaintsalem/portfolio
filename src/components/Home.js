@@ -12,7 +12,7 @@ const Home = () => {
             <Alert key='primary' width='600px'>
                 <p>I wish I could fix this.</p>
             </Alert>
-            <Button variant="danger">IT BREAK</Button>
+            <Button variant="danger">IT BREAK</Button>{' '}
         </div>
     )
 
