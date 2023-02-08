@@ -13,13 +13,11 @@ import Nav from 'react-bootstrap/Nav';
 
 // `
 
-const MyNavbar = styled.Navbar`
-  background-color: #a46ee6;
-`
+
 
 const NavBar = () => {
     return (
-      <MyNavbar>        
+      <Navbar>        
           <Container>
               <Navbar.Brand href="/portfolio"><img src="./public/chillime.jpg"/></Navbar.Brand>
               <Link to="/about">About</Link>
@@ -28,7 +26,7 @@ const NavBar = () => {
            
           </Container>
       
-      </MyNavbar>
+      </Navbar>
       );
 
 }
