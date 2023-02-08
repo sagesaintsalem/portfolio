@@ -22,10 +22,8 @@ const NavBar = () => {
       <MyNavbar>        
           <Container>
               <Navbar.Brand href="/portfolio"><img src="./public/chillime.jpg"/></Navbar.Brand>
-              <Link to="/portfolio">Home</Link>
-            
               <Link to="/about">About</Link>
-            
+              
               <Link to="/projects">Projects</Link>
            
           </Container>
