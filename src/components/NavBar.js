@@ -24,9 +24,9 @@ const NavBar = () => {
               
               <Link to="/projects">Projects</Link>
 
-              <Link to={GHLink}><span src="./images/github.png"></span></Link>
+              <Link to={GHLink}><img src="./images/github.png"/></Link>
 
-              <Link to={LinkedIn}><span src="./images/linkedblack.png"></span></Link>
+              <Link to={LinkedIn}><img src="./images/linkedblack.png"/></Link>
            
           </Container>
       
