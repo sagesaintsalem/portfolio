@@ -19,7 +19,7 @@ const NavBar = () => {
     return (
       <Navbar>        
           <Container>
-              <Navbar.Brand href="/portfolio"><img src="./public/chillime.jpg"/></Navbar.Brand>
+              <Navbar.Brand href="/portfolio"><img src="./images/chillime.jpg"/></Navbar.Brand>
               <Link to="/about">About</Link>
               
               <Link to="/projects">Projects</Link>
