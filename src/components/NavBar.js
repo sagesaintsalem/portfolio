@@ -34,14 +34,14 @@ const NavBar = () => {
             <Container>
                 <Navbar.Brand href="/portfolio"><img src="./images/chillime.jpg" width="41px" height="56px"/>Rita Toussaint</Navbar.Brand>
                   <div>
-                    <Button variant="success" onClick={handleShow}><img src="./hamborgmenu.png"/></Button>
+                    <Button variant="success" onClick={handleShow}><img src="./images/hamborgmenu.png"/></Button>
                     <Offcanvas show={show} onHide={handleClose}>
                       <Offcanvas.Header closeButton>
                         <Offcanvas.Title>Main Menu</Offcanvas.Title>
                       </Offcanvas.Header>
                       <Offcanvas.Body>
                         <OffContents>
-                          <Link to="/projects">Projects</Link>
+                          <Link to="/projects"><p>Projects</p></Link>
 
                           <Link to="/faqs">FAQs</Link>
 

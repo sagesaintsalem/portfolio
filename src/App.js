@@ -11,7 +11,7 @@ const AppWrap = styled.div`
     background-color: #cc85ff;
     font-family:'Jost', sans-serif;
     height: 1080px;
-    margin: 1em;
+    
 `
 
 function App() {

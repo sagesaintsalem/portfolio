@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 
-// const 
+const HomeDiv = styled.div`
+    margin:1em;
+`
 
 const Home = () => {
     return (
-        <div>
+        <HomeDiv>
 
             <h4>My name is Rita Toussaint and this is my portfolio site!</h4>
             
@@ -19,7 +21,7 @@ const Home = () => {
             <p>I know that this field will be a source of constant learning and I could not be more excited! Learning new things - languages, a new art form, coding - brings me such joy and inspires me. 
                 At my core, my biggest wish is to leave this world in a better place than I found it. I hope to use my new skills to improve lives, be that through designing a website or an app for a charity or through helping people protect their data. I sincerely hope that this site will be a springboard for me to achieve that.
             </p>
-        </div>
+        </HomeDiv>
     )
 
 }
