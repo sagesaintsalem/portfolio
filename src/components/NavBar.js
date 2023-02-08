@@ -20,7 +20,7 @@ const NavBar = () => {
       <NavWrap>
         <Navbar id="navbar">        
             <Container>
-                <Navbar.Brand href="/portfolio"><img src="./images/chillime.jpg" width="41px" height="56px"/></Navbar.Brand>
+                <Navbar.Brand href="/portfolio"><img src="./images/chillime.jpg" width="41px" height="56px"/>Rita Toussaint</Navbar.Brand>
                 
                 <Link to="/projects">Projects</Link>
 
