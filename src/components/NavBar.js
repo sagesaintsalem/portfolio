@@ -1,31 +1,36 @@
 import styled from 'styled-components';
 import { Link } from "react-router-dom";
+import Navbar from "react-bootstrap/Navbar";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
 
 
-const NavItems = styled.ul`
-  list-style:none;
-  display: flex;
-  background-color: green;
-  gap: 1em;
+// const NavItems = styled.ul`
+//   list-style:none;
+//   display: flex;
+//   background-color: green;
+//   gap: 1em;
 
+// `
+
+const MyNavbar = styled.Navbar`
+  background-color: #a46ee6;
 `
 
 const NavBar = () => {
     return (
-      <>        
-          <NavItems>
-            <li>
+      <MyNavbar>        
+          <Container>
+              <Navbar.Brand href="/portfolio"><img src="./public/chillime.jpg"/></Navbar.Brand>
               <Link to="/portfolio">Home</Link>
-            </li>
-            <li>
+            
               <Link to="/about">About</Link>
-            </li>
-            <li>
+            
               <Link to="/projects">Projects</Link>
-            </li>
-          </NavItems>
+           
+          </Container>
       
-      </>
+      </MyNavbar>
       );
 
 }
