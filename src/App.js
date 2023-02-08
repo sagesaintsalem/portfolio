@@ -9,6 +9,7 @@ import styled from "styled-components";
 const AppWrap = styled.div`
     background-color: #cc85ff;
     font-family:'Jost', sans-serif;
+    height: 100%;
 `
 
 function App() {

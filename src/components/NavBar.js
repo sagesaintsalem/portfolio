@@ -1,7 +1,10 @@
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Container from 'react-bootstrap/Container';
+import Button from 'react-bootstrap/Button';
+import Offcanvas from 'react-bootstrap/Offcanvas';
 import Nav from 'react-bootstrap/Nav';
 
 
@@ -16,17 +19,32 @@ const NavWrap = styled.div`
 
 
 const NavBar = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
     return (
       <NavWrap>
         <Navbar id="navbar">        
             <Container>
                 <Navbar.Brand href="/portfolio"><img src="./images/chillime.jpg" width="41px" height="56px"/>Rita Toussaint</Navbar.Brand>
-                
-                <Link to="/projects">Projects</Link>
+                  <div>
+                    <Button variant="dark" onClick={handleShow}></Button>
+                    <Offcanvas show={show} onHide={handleClose}>
+                      <Offcanvas.Header closeButton>
+                        <Offcanvas.Title>Main Menu</Offcanvas.Title>
+                      </Offcanvas.Header>
+                      <Offcanvas.Body>
+                      <Link to="/projects">Projects</Link>
 
-                <a href={GHLink}><img src="./images/github.png"/></a>
+                      <a href={GHLink}><img src="./images/github.png"/></a>
 
-                <a href={LinkedIn}><img src="./images/linkedblack.png"/></a>
+                      <a href={LinkedIn}><img src="./images/linkedblack.png"/></a>
+                      </Offcanvas.Body>
+                    </Offcanvas>
+
+                  </div>
             
             </Container>
         
