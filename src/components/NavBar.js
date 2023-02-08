@@ -12,6 +12,10 @@ import Nav from 'react-bootstrap/Nav';
 const NavWrap = styled.div`
    background-color: #cc85ff;
 `
+const OffContents = styled.div`
+  display: flex;
+  flex-direction: column;
+`
 
 
  const GHLink = ("https://github.com/sagesaintsalem");
@@ -30,17 +34,21 @@ const NavBar = () => {
             <Container>
                 <Navbar.Brand href="/portfolio"><img src="./images/chillime.jpg" width="41px" height="56px"/>Rita Toussaint</Navbar.Brand>
                   <div>
-                    <Button variant="dark" onClick={handleShow}></Button>
+                    <Button variant="success" onClick={handleShow}><img src="./hamborgmenu.png"/></Button>
                     <Offcanvas show={show} onHide={handleClose}>
                       <Offcanvas.Header closeButton>
                         <Offcanvas.Title>Main Menu</Offcanvas.Title>
                       </Offcanvas.Header>
                       <Offcanvas.Body>
-                      <Link to="/projects">Projects</Link>
+                        <OffContents>
+                          <Link to="/projects">Projects</Link>
 
-                      <a href={GHLink}><img src="./images/github.png"/></a>
+                          <Link to="/faqs">FAQs</Link>
 
-                      <a href={LinkedIn}><img src="./images/linkedblack.png"/></a>
+                          <a href={GHLink}><img src="./images/github.png"/>My GitHub</a>
+
+                          <a href={LinkedIn}><img src="./images/linkedblack.png"/>My LinkedIn</a>
+                        </OffContents>
                       </Offcanvas.Body>
                     </Offcanvas>
 
