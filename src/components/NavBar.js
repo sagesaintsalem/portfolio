@@ -19,7 +19,7 @@ const NavBar = () => {
     return (
       <Navbar>        
           <Container>
-              <Navbar.Brand href="/portfolio"><img src="./images/chillime.jpg" width="81px" height="112px"/></Navbar.Brand>
+              <Navbar.Brand href="/portfolio"><img src="./images/chillime.jpg" width="41px" height="56px"/></Navbar.Brand>
               <Link to="/about">About</Link>
               
               <Link to="/projects">Projects</Link>
