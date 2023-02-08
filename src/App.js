@@ -4,11 +4,16 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Home from "./components/Home";
 import "./App.css";
+import styled from "styled-components";
 
+const AppWrap = styled.div`
+    background-color: #a46ee6;
+    font-family:'Jost', sans-serif;
+`
 
 function App() {
   return (
-    <div className="App">
+    <AppWrap className="App">
      
       <Router>
         <NavBar />
@@ -18,7 +23,7 @@ function App() {
             <Route path="/projects" element={<Projects />}></Route>
           </Routes>
       </Router>
-    </div>
+    </AppWrap>
   );
 }
 
