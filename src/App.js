@@ -7,7 +7,7 @@ import "./App.css";
 import styled from "styled-components";
 
 const AppWrap = styled.div`
-    background-color: #a46ee6;
+    background-color: #cc85ff;
     font-family:'Jost', sans-serif;
 `
 
