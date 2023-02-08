@@ -6,32 +6,32 @@ import Nav from 'react-bootstrap/Nav';
 import "./navbar.css";
 
 
-// const NavItems = styled.ul`
-//   list-style:none;
-//   display: flex;
-//   background-color: green;
-//   gap: 1em;
+const NavWrap = styled.div`
+    background-color: #a46ee6;
+`
 
-// `
+
  const GHLink = ("https://github.com/sagesaintsalem");
  const LinkedIn = ("https://www.linkedin.com/in/rita-toussaint/");
 
 
 const NavBar = () => {
     return (
-      <Navbar id="navbar">        
-          <Container>
-              <Navbar.Brand href="/portfolio"><img src="./images/chillime.jpg" width="41px" height="56px"/></Navbar.Brand>
-              
-              <Link to="/projects">Projects</Link>
+      <NavWrap>
+        <Navbar id="navbar">        
+            <Container>
+                <Navbar.Brand href="/portfolio"><img src="./images/chillime.jpg" width="41px" height="56px"/></Navbar.Brand>
+                
+                <Link to="/projects">Projects</Link>
 
-              <a href={GHLink}><img src="./images/github.png"/></a>
+                <a href={GHLink}><img src="./images/github.png"/></a>
 
-              <a href={LinkedIn}><img src="./images/linkedblack.png"/></a>
-           
-          </Container>
-      
-      </Navbar>
+                <a href={LinkedIn}><img src="./images/linkedblack.png"/></a>
+            
+            </Container>
+        
+        </Navbar>
+      </NavWrap>
       );
 
 }
