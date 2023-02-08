@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
+import "./navbar.css";
 
 
 // const NavItems = styled.ul`
@@ -18,7 +19,7 @@ import Nav from 'react-bootstrap/Nav';
 
 const NavBar = () => {
     return (
-      <Navbar>        
+      <Navbar id="navbar">        
           <Container>
               <Navbar.Brand href="/portfolio"><img src="./images/chillime.jpg" width="41px" height="56px"/></Navbar.Brand>
               
