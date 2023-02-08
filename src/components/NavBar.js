@@ -7,7 +7,7 @@ import Nav from 'react-bootstrap/Nav';
 
 
 const NavWrap = styled.div`
-    background-color: #a46ee6;
+   background-color: #cc85ff;
 `
 
 
