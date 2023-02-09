@@ -35,6 +35,11 @@ const NoTextDec = {
   
 };
 
+const NoMargins = {
+  margin: "0px 5px",
+  padding: "1em"
+}
+
 
  const GHLink = ("https://github.com/sagesaintsalem");
  const LinkedIn = ("https://www.linkedin.com/in/rita-toussaint/");
@@ -49,10 +54,10 @@ const NavBar = () => {
     return (
       <NavWrap>
         <Navbar id="navbar">        
-            <Container>
+            <Container style={NoMargins}>
                 <Navbar.Brand href="/portfolio"><img src="./images/chillime.jpg" width="41px" height="56px"/>Rita Toussaint</Navbar.Brand>
                   <div>
-                    <Button variant="success" onClick={handleShow}><img src="./images/hamborgmenu.png"/></Button>
+                    <Button variant="transparent" onClick={handleShow}><img src="./images/hamborgmenu.png"/></Button>
                     
                       <Offcanvas show={show} onHide={handleClose}>
                         <OffCaColour>
