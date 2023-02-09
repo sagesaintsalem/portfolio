@@ -5,13 +5,18 @@ import Navbar from "react-bootstrap/Navbar";
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import Nav from 'react-bootstrap/Nav';
+//import Nav from 'react-bootstrap/Nav';
 
 
 
 const NavWrap = styled.div`
    background-color: #cc85ff;
 `
+const OffCaColour = styled.div`
+  background-color: rgb(204, 247, 174, 0.75);
+  height: 1080px;
+`
+
 const OffContents = styled.div`
   display: flex;
   flex-direction: column;
@@ -23,6 +28,12 @@ const SocialDiv = styled.div`
   justify-content: space-evenly;
   padding: 1em 0em;
 `
+const NoTextDec = {
+  textDecoration: "none",
+  color: "black",
+  fontSize: "22px"
+  
+};
 
 
  const GHLink = ("https://github.com/sagesaintsalem");
@@ -42,22 +53,26 @@ const NavBar = () => {
                 <Navbar.Brand href="/portfolio"><img src="./images/chillime.jpg" width="41px" height="56px"/>Rita Toussaint</Navbar.Brand>
                   <div>
                     <Button variant="success" onClick={handleShow}><img src="./images/hamborgmenu.png"/></Button>
-                    <Offcanvas show={show} onHide={handleClose}>
-                      <Offcanvas.Header closeButton>
-                        <Offcanvas.Title>Main Menu</Offcanvas.Title>
-                      </Offcanvas.Header>
-                      <Offcanvas.Body>
-                        <OffContents>
-                          <Link to="/projects"><p>Projects</p></Link>
+                    
+                      <Offcanvas show={show} onHide={handleClose}>
+                        <OffCaColour>
+                        <Offcanvas.Header closeButton>
+                          <Offcanvas.Title><h3>Main Menu</h3></Offcanvas.Title>
+                        </Offcanvas.Header>
+                        <Offcanvas.Body>
+                          <OffContents>
+                            <Link to="/projects" style={NoTextDec}>Projects</Link>
 
-                          <Link to="/faqs">FAQs</Link>
-                          <SocialDiv>
-                            <a href={GHLink}><img src="./images/github.png"/></a>
-                            <a href={LinkedIn}><img src="./images/linkedblack.png"/></a>
-                          </SocialDiv>
-                        </OffContents>
-                      </Offcanvas.Body>
-                    </Offcanvas>
+                            <Link to="/faqs" style={NoTextDec}>FAQs</Link>
+                            <SocialDiv>
+                              <a href={GHLink}><img src="./images/github.png"/></a>
+                              <a href={LinkedIn}><img src="./images/linkedblack.png"/></a>
+                            </SocialDiv>
+                          </OffContents>
+                        </Offcanvas.Body>
+                        </OffCaColour>
+                      </Offcanvas>
+
 
                   </div>
             
