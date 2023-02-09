@@ -17,6 +17,13 @@ const OffContents = styled.div`
   flex-direction: column;
 `
 
+const SocialDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 1em 0em;
+`
+
 
  const GHLink = ("https://github.com/sagesaintsalem");
  const LinkedIn = ("https://www.linkedin.com/in/rita-toussaint/");
@@ -44,10 +51,10 @@ const NavBar = () => {
                           <Link to="/projects"><p>Projects</p></Link>
 
                           <Link to="/faqs">FAQs</Link>
-
-                          <a href={GHLink}><img src="./images/github.png"/>My GitHub</a>
-
-                          <a href={LinkedIn}><img src="./images/linkedblack.png"/>My LinkedIn</a>
+                          <SocialDiv>
+                            <a href={GHLink}><img src="./images/github.png"/></a>
+                            <a href={LinkedIn}><img src="./images/linkedblack.png"/></a>
+                          </SocialDiv>
                         </OffContents>
                       </Offcanvas.Body>
                     </Offcanvas>
