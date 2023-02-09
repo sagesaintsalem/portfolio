@@ -8,6 +8,7 @@ const TextBoxes = styled.div`
     background-color: rgb(204, 247, 174, 0.75);
     border-radius: 4px;
     padding: 0px 0.5em;
+    margin: 0px 70px;
 `
 const HomeText = styled.p`
     text-align: center;

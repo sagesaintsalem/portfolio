@@ -5,7 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-//import Nav from 'react-bootstrap/Nav';
+
 
 
 
@@ -35,10 +35,14 @@ const NoTextDec = {
   
 };
 
-const NoMargins = {
-  margin: "0px 5px",
-  padding: "1em"
-}
+
+
+// const NoMargins = {
+//   margin: "0px 5px",
+//   padding: "1em",
+//   width: "1280px",
+  
+// }
 
 
  const GHLink = ("https://github.com/sagesaintsalem");
@@ -54,7 +58,7 @@ const NavBar = () => {
     return (
       <NavWrap>
         <Navbar id="navbar">        
-            <Container style={NoMargins}>
+            <Container breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}>
                 <Navbar.Brand href="/portfolio"><img src="./images/chillime.jpg" width="41px" height="56px"/>Rita Toussaint</Navbar.Brand>
                   <div>
                     <Button variant="transparent" onClick={handleShow}><img src="./images/hamborgmenu.png"/></Button>
