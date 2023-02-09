@@ -35,6 +35,9 @@ const NoTextDec = {
   
 };
 
+const BrandText = {
+  fontSize: "35px"
+}
 
 
 // const NoMargins = {
@@ -59,7 +62,7 @@ const NavBar = () => {
       <NavWrap>
         <Navbar id="navbar">        
             <Container breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}>
-                <Navbar.Brand href="/portfolio"><img src="./images/chillime.jpg" width="41px" height="56px"/>Rita Toussaint</Navbar.Brand>
+                <Navbar.Brand href="/portfolio" style={BrandText}><img src="./images/chillime.jpg" width="41px" height="56px"/>Rita Toussaint</Navbar.Brand>
                   <div>
                     <Button variant="transparent" onClick={handleShow}><img src="./images/hamborgmenu.png"/></Button>
                     

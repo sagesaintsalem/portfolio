@@ -4,6 +4,11 @@ const HomeDiv = styled.div`
     margin:3em 2em;
 
 `
+const TitleText = styled.h4`
+    text-align: center;
+    font-weight: bold;
+`
+
 const TextBoxes = styled.div`
     background-color: rgb(204, 247, 174, 0.75);
     border-radius: 4px;
@@ -20,7 +25,7 @@ const Home = () => {
     return (
         <HomeDiv>
 
-            <h4>My name is Rita Toussaint and this is my portfolio site!</h4>
+            <TitleText>My name is Rita Toussaint and this is my portfolio site!</TitleText>
             <TextBoxes>
             <HomeText>I was originally an aspiring academic and frequent volunteer before realising that that lifestyle was not for me. During the pandemic, I started to experiment with coding - Python, HTML, CSS, Bootstrap - and found that I not only enjoyed it, but that I was <em>good</em> at it. 
                 From there, I aimed to build a career in tech: starting with 2 short courses in CyberSecurity at Glasgow Clyde College and then a low-code position at With You With Me. I was, unfortunately, made redundant but I took this bad luck as a chance to kick my coding into high gear 
