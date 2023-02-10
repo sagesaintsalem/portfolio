@@ -46,7 +46,7 @@ const Faqs = () => {
                     </FaqText>
                 </TextBoxes>
                 </Col>
-                <Col xs="auto"><img src="./images/chillime.jpg" height="140px" width="103px"></img></Col>
+                <Col xs="auto"><img src="./public/images/chillime.jpg" height="140px" width="103px"></img></Col>
                 </Row>
 
 
