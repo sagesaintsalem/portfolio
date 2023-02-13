@@ -7,7 +7,7 @@ const HomeDiv = styled.div`
     margin:3em 2em;
 
 `
-const TitleText = styled.h4`
+const TitleText = styled.h3`
     text-align: center;
     font-weight: bold;
 `
@@ -24,12 +24,34 @@ const HomeText = styled.p`
     word-wrap: normal;
 `
 
+const Langs = styled.h5`
+    text-align: center;
+
+`
+
 const Home = () => {
     return (
         <HomeDiv>
 
             <TitleText>My name is Rita Toussaint and this is my portfolio site!</TitleText>
             <Container>
+                <Row>
+                    <Col>
+                        <TextBoxes>
+                            <Langs>HTML/CSS/Bootstrap</Langs>
+                        </TextBoxes>
+                    </Col>
+                    <Col>
+                        <TextBoxes>
+                            <Langs>Javascript - React, Node, Express</Langs>
+                        </TextBoxes>
+                    </Col>
+                    <Col>
+                        <TextBoxes>
+                            <Langs>Python - Flask</Langs>
+                        </TextBoxes>
+                    </Col>
+                </Row>
                 <Col>
                 <TextBoxes>
                 <HomeText>I was originally an aspiring academic and frequent volunteer before realising that that lifestyle was not for me. During the pandemic, I started to experiment with coding - Python, HTML, CSS, Bootstrap - and found that I not only enjoyed it, but that I was <em>good</em> at it. 
